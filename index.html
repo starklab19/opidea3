@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptimAI - Style Mimic for X</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="style-mimic-version">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="mimic-nav">
+        <div class="container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2C8.268 2 2 8.268 2 16C2 23.732 8.268 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#10B981" fill-opacity="0.2"/>
+                    <path d="M23 12C23 10.3431 21.6569 9 20 9H12C10.3431 9 9 10.3431 9 12V20C9 21.6569 10.3431 23 12 23H20C21.6569 23 23 21.6569 23 20V12Z" fill="#10B981"/>
+                    <path d="M16 14C14.8954 14 14 14.8954 14 16C14 17.1046 14.8954 18 16 18C17.1046 18 18 17.1046 18 16C18 14.8954 17.1046 14 16 14Z" fill="#FFFFFF"/>
+                </svg>
+                <span>OptimAI</span>
+            </div>
+            <button class="mobile-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#style-mimic">Style Mimic</a>
+                <a href="#features">Features</a>
+                <a href="#examples">Examples</a>
+                <a href="#" class="btn-login">Login</a>
+                <a href="#" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mimic-hero">
+        <div class="container">
+            <div class="mimic-grid">
+                <div class="mimic-hero-content">
+                    <div class="badge-wrapper">
+                        <span class="badge badge-new">New</span>
+                        <span class="badge-text">Style Mimic Technology</span>
+                    </div>
+                    <h1>Write tweets like <span class="gradient-text">anyone on X</span></h1>
+                    <p class="hero-subtitle">Our advanced AI analyzes and replicates any X user's unique writing style, tone, and patterns to create authentic-sounding tweets that could have been written by them.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn-primary"><i class="fas fa-bolt"></i> Try Style Mimic</a>
+                        <a href="#examples" class="btn-secondary"><i class="fas fa-eye"></i> See Examples</a>
+                    </div>
+                </div>
+                <div class="mimic-demo">
+                    <div class="mimic-demo-header">
+                        <div class="mimic-input">
+                            <div class="mimic-search">
+                                <i class="fas fa-search"></i>
+                                <input type="text" placeholder="Enter any X username" value="@elonmusk">
+                                <button class="mimic-analyze-btn">Analyze</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mimic-demo-content">
+                        <div class="mimic-result active">
+                            <div class="mimic-profile">
+                                <img src="https://i.ibb.co/6FWdHy5/testimonial-author.png" alt="Profile" class="mimic-avatar">
+                                <div class="mimic-user-info">
+                                    <h4>Elon Musk</h4>
+                                    <p>@elonmusk</p>
+                                </div>
+                            </div>
+                            <div class="mimic-style-analysis">
+                                <div class="style-metric">
+                                    <div class="metric-label">Sentence Length</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 35%"></div>
+                                    </div>
+                                    <div class="metric-value">Short</div>
+                                </div>
+                                <div class="style-metric">
+                                    <div class="metric-label">Emoji Usage</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 25%"></div>
+                                    </div>
+                                    <div class="metric-value">Low</div>
+                                </div>
+                                <div class="style-metric">
+                                    <div class="metric-label">Question Frequency</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 65%"></div>
+                                    </div>
+                                    <div class="metric-value">High</div>
+                                </div>
+                                <div class="style-metric">
+                                    <div class="metric-label">Humor Level</div>
+                                    <div class="metric-bar">
+                                        <div class="metric-fill" style="width: 80%"></div>
+                                    </div>
+                                    <div class="metric-value">Very High</div>
+                                </div>
+                            </div>
+                            <div class="mimic-generated-tweets">
+                                <h4>Generated Tweets</h4>
+                                <div class="generated-tweet">
+                                    <p>Mars colony is making great progress. Expect to see first sustainable habitats by 2026. The future is multi-planetary.</p>
+                                    <div class="tweet-actions">
+                                        <button class="btn-tweet-action"><i class="fas fa-sync-alt"></i> Regenerate</button>
+                                        <button class="btn-tweet-action"><i class="far fa-copy"></i> Copy</button>
+                                    </div>
+                                </div>
+                                <div class="generated-tweet">
+                                    <p>Is AI consciousness possible? Perhaps. The line between advanced intelligence and awareness may be thinner than we think.</p>
+                                    <div class="tweet-actions">
+                                        <button class="btn-tweet-action"><i class="fas fa-sync-alt"></i> Regenerate</button>
+                                        <button class="btn-tweet-action"><i class="far fa-copy"></i> Copy</button>
+                                    </div>
+                                </div>
+                                <div class="generated-tweet">
+                                    <p>Just tried the new Cybertruck prototype on Mars terrain simulation. Handles like a dream. Production ramping up soon.</p>
+                                    <div class="tweet-actions">
+                                        <button class="btn-tweet-action"><i class="fas fa-sync-alt"></i> Regenerate</button>
+                                        <button class="btn-tweet-action"><i class="far fa-copy"></i> Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mimic-hero-background">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+        </div>
+    </section>
+
+    <section class="style-mimic-section" id="style-mimic">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Style Mimic</span>
+                <h2>Write like anyone on X</h2>
+                <p class="section-subtitle">Our advanced AI can analyze and replicate any X user's unique writing style</p>
+            </div>
+            
+            <div class="mimic-features-grid">
+                <div class="mimic-feature reveal">
+                    <div class="mimic-feature-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Style DNA Analysis</h3>
+                    <p>Our AI analyzes thousands of tweets to identify unique patterns in vocabulary, sentence structure, emoji usage, and more to create a complete style profile.</p>
+                </div>
+                
+                <div class="mimic-feature reveal">
+                    <div class="mimic-feature-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Perfect Tone Matching</h3>
+                    <p>Capture the exact tone of any account—whether it's professional, humorous, inspirational, or technical—for tweets that sound authentically like them.</p>
+                </div>
+                
+                <div class="mimic-feature reveal">
+                    <div class="mimic-feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Deep Learning Model</h3>
+                    <p>Our proprietary neural network has been trained on millions of tweets to understand the nuances of language and personal expression on X.</p>
+                </div>
+                
+                <div class="mimic-feature reveal">
+                    <div class="mimic-feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Engagement Prediction</h3>
+                    <p>Not only do we match the style, but we also predict how well the generated tweets will perform based on historical engagement data.</p>
+                </div>
+            </div>
+            
+            <div class="mimic-process">
+                <div class="process-step reveal">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Enter any X username</h3>
+                        <p>Simply provide the @handle of any public X account you want to analyze.</p>
+                    </div>
+                </div>
+                
+                <div class="process-arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                
+                <div class="process-step reveal">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI analyzes their style</h3>
+                        <p>Our algorithm processes their tweets to create a comprehensive style profile.</p>
+                    </div>
+                </div>
+                
+                <div class="process-arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+                
+                <div class="process-step reveal">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Generate authentic tweets</h3>
+                        <p>Create tweets that sound exactly like they were written by that account.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mimic-examples" id="examples">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Examples</span>
+                <h2>See Style Mimic in action</h2>
+                <p class="section-subtitle">Compare real tweets with our AI-generated versions</p>
+            </div>
+            
+            <div class="examples-tabs">
+                <div class="examples-nav">
+                    <button class="example-tab active" data-tab="tech">Tech CEO</button>
+                    <button class="example-tab" data-tab="celebrity">Celebrity</button>
+                    <button class="example-tab" data-tab="brand">Brand</button>
+                    <button class="example-tab" data-tab="influencer">Influencer</button>
+                </div>
+                
+                <div class="examples-content">
+                    <div class="example-pane active" id="tech">
+                        <div class="example-comparison">
+                            <div class="example-column">
+                                <h4>Real Tweets</h4>
+                                <div class="example-tweet real-tweet">
+                                    <div class="tweet-header">
+                                        <img src="https://i.ibb.co/6FWdHy5/testimonial-author.png" alt="Profile" class="tweet-avatar">
+                                        <div class="tweet-user-info">
+                                            <h5>Tech CEO</h5>
+                                            <p>@techceo</p>
+                                        </div>
+                                    </div>
+                                    <p class="tweet-text">Just had a great meeting with the team about our new AI initiative. The potential for positive impact is enormous. Excited to share more soon!</p>
+                                </div>
+                                <div class="example-tweet real-tweet">
+                                    <div class="tweet-header">
+                                        <img src="https://i.ibb.co/6FWdHy5/testimonial-author.png" alt="Profile" class="tweet-avatar">
+                                        <div class="tweet-user-info">
+                                            <h5>Tech CEO</h5>
+                                            <p>@techceo</p>
+                                        </div>
+                                    </div>
+                                    <p class="tweet-text">Innovation isn't just about new technology, it's about solving real human problems. What problem are you trying to solve?</p>
+                                </div>
+                            </div>
+                            
+                            <div class="example-column">
+                                <h4>AI-Generated Tweets</h4>
+                                <div class="example-tweet ai-tweet">
+                                    <div class="tweet-header">
+                                        <img src="https://i.ibb.co/6FWdHy5/testimonial-author.png" alt="Profile" class="tweet-avatar">
+                                        <div class="tweet-user-info">
+                                            <h5>Generated by OptimAI</h5>
+                                            <p>Style Mimic</p>
+                                        </div>
+                                    </div>
+                                    <p class="tweet-text">Our quarterly review shows incredible progress on the quantum computing front. The team has exceeded all expectations. Looking forward to the next breakthrough!</p>
+                                </div>
+                                <div class="example-tweet ai-tweet">
+                                    <div class="tweet-header">
+                                        <img src="https://i.ibb.co/6FWdHy5/testimonial-author.png" alt="Profile" class="tweet-avatar">
+                                        <div class="tweet-user-info">
+                                            <h5>Generated by OptimAI</h5>
+                                            <p>Style Mimic</p>
+                                        </div>
+                                    </div>
+                                    <p class="tweet-text">The best innovations often come from asking the right questions, not just having the right answers. What question should we be asking about the future of technology?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="style-analysis-summary">
+                            <h4>Style Analysis</h4>
+                            <div class="style-tags">
+                                <span class="style-tag">Optimistic tone</span>
+                                <span class="style-tag">Question-based engagement</span>
+                                <span class="style-tag">Short sentences</span>
+                                <span class="style-tag">Future-focused</span>
+                                <span class="style-tag">Team acknowledgment</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="example-pane" id="celebrity">
+                        <!-- Celebrity example content -->
+                    </div>
+                    
+                    <div class="example-pane" id="brand">
+                        <!-- Brand example content -->
+                    </div>
+                    
+                    <div class="example-pane" id="influencer">
+                        <!-- Influencer example content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mimic-features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Beyond style mimicking</h2>
+                <p class="section-subtitle">OptimAI offers a complete suite of tools for X success</p>
+            </div>
+            
+            <div class="features-bento">
+                <div class="bento-item bento-large reveal">
+                    <div class="bento-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Smart Scheduling</h3>
+                    <p>Our AI determines the optimal posting times based on your audience's activity patterns to maximize visibility and engagement.</p>
+                    <img src="https://i.ibb.co/sdz2G9Wr/Screenshot-16.png" alt="Smart Scheduling" class="bento-image">
+                </div>
+                
+                <div class="bento-item reveal">
+                    <div class="bento-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3>Hashtag Optimization</h3>
+                    <p>Discover the most effective hashtags for your content to reach the right audience and join relevant conversations.</p>
+                </div>
+                
+                <div class="bento-item reveal">
+                    <div class="bento-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Performance Analytics</h3>
+                    <p>Comprehensive insights into your content performance with actionable recommendations for improvement.</p>
+                </div>
+                
+                <div class="bento-item reveal">
+                    <div class="bento-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Auto-Engagement</h3>
+                    <p>Automatically respond to comments and mentions with contextually appropriate replies that match your style.</p>
+                </div>
+                
+                <div class="bento-item bento-large reveal">
+                    <div class="bento-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Audience Analysis</h3>
+                    <p>Understand your followers' interests, behaviors, and preferences to create more targeted and relevant content.</p>
+                    <img src="https://i.ibb.co/sdz2G9Wr/Screenshot-16.png" alt="Audience Analysis" class="bento-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mimic-use-cases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Use Cases</span>
+                <h2>Who can benefit from Style Mimic?</h2>
+                <p class="section-subtitle">Our technology helps a wide range of users create more effective content</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="use-case-card reveal">
+                    <div class="use-case-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Businesses</h3>
+                    <p>Maintain a consistent brand voice across multiple team members managing your social media presence.</p>
+                    <div class="use-case-benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Consistent brand messaging</span>
+                    </div>
+                </div>
+                
+                <div class="use-case-card reveal">
+                    <div class="use-case-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Executives</h3>
+                    <p>Delegate social media management while ensuring all content sounds authentically like your own voice.</p>
+                    <div class="use-case-benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Authentic personal branding</span>
+                    </div>
+                </div>
+                
+                <div class="use-case-card reveal">
+                    <div class="use-case-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Marketers</h3>
+                    <p>Create content that resonates with specific audience segments by matching influential voices in your industry.</p>
+                    <div class="use-case-benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Higher audience engagement</span>
+                    </div>
+                </div>
+                
+                <div class="use-case-card reveal">
+                    <div class="use-case-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Agencies</h3>
+                    <p>Manage multiple client accounts with perfect tone and style matching for each unique brand voice.</p>
+                    <div class="use-case-benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Efficient multi-account management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mimic-cta">
+        <div class="container">
+            <div class="mimic-cta-content reveal">
+                <h2>Ready to write like anyone on X?</h2>
+                <p>Join thousands of users who are creating more engaging content with OptimAI's Style Mimic technology.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary"><i class="fas fa-rocket"></i> Get Started Free</a>
+                    <p class="cta-note">No credit card required. Analyze up to 3 profiles per day with our free plan.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mimic-cta-background">
+            <div class="gradient-sphere sphere-3"></div>
+            <div class="gradient-sphere sphere-4"></div>
+        </div>
+    </section>
+
+    <footer class="mimic-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 2C8.268 2 2 8.268 2 16C2 23.732 8.268 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#10B981" fill-opacity="0.2"/>
+                            <path d="M23 12C23 10.3431 21.6569 9 20 9H12C10.3431 9 9 10.3431 9 12V20C9 21.6569 10.3431 23 12 23H20C21.6569 23 23 21.6569 23 20V12Z" fill="#10B981"/>
+                            <path d="M16 14C14.8954 14 14 14.8954 14 16C14 17.1046 14.8954 18 16 18C17.1046 18 18 17.1046 18 16C18 14.8954 17.1046 14 16 14Z" fill="#FFFFFF"/>
+                        </svg>
+                        <span>OptimAI</span>
+                    </div>
+                    <p>AI-powered style mimicking and content optimization for X.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#style-mimic">Style Mimic</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#examples">Examples</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 OptimAI. All rights reserved.</p>
+                <div class="footer-links-bottom">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
